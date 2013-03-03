@@ -52,8 +52,6 @@ local function openMenu()
 		local node = Tree:AddNode( v )
 		node:MakeFolder( v, "GAME", true )
 	end
-
-	Frame:SetMinimize( true )
 end
 
 concommand.Add( "loadaddon_menu", openMenu )
