@@ -14,7 +14,7 @@ Author: Adult
 ==================================
 ===== Instructions:
 
-Bind a key to "lua_openscript_cl autorun/addon-loader.lua"
+Bind a key to "lua_openscript_cl autorun/addon_loader.lua"
 Use commands.
 
 ==================================
