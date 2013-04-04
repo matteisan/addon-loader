@@ -4,8 +4,6 @@
 ]]--
 
 -- Helper
-
-include( "stuff.lua" )
 local function parentsToDir( panel, text )
     local parent = panel:GetParent()
     local text = text or ""
