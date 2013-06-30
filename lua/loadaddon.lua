@@ -61,16 +61,14 @@ function openAllFromDir( addon )
 	MsgC( Color(0,255,0), "======= Loading Client Lua =======\n" )
 	MsgC( Color(0,255,0), "==================================\n" )
 
-	local isdir = file.IsDir( addon, "GAME" )
-
 	-- Error checking
-	if not isdir and not file.Exists( addon, "GAME" ) then
+	if not file.Exists( addon, "GAME" ) then
 		MsgC( Color(255,0,0), addon .. " not found!" )
 		return 
 	end
 
 	-- Defeats the purpose if it's just loading a single file.
-	if not isdir then
+	if not file.IsDir( addon, "GAME" ) then
 		openScript( takeOffDirectory( addon ) )
 		return 
 	end
